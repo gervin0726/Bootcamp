@@ -1,0 +1,14 @@
+<h1> <%= @project.name %></h1>
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+<ul>
+  <% @time_entries.each do |entry| %>
+    <li> <%= entry.hours %> h</li>
+    <li> <%= entry.minutes %> m -</li>
+    <li> <%= entry.date %></li>
+    <li> <%= link_to 'Edit', edit_project_time_entry_path(@project, entry) %></li>
+    <li> <%= link_to 'Delete', project_time_entry_path(@project, entry),
+              method: :delete, data: { confirm: 'Are you sure?'}  %></li>
+    <% end %>
+</ul>

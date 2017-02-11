@@ -1,0 +1,19 @@
+<h1>Products#index</h1>
+<% if flash[:alert] %>
+  <%= flash[:alert] %>
+<% end %>
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+<ul>
+  <% @products.each do |product| %>
+    <li> <%= product.title %></li>
+    <li> <%= product.description %></li>
+    <li> <%= product.deadline %></li>
+    <li> <%= link_to 'show', user_product_path(@user,product) %></li>
+    <li> <%= link_to 'delete', user_product_path(@user,product), method: :delete,
+             data: { confirm: 'Are you sure?'}
+         %>
+    </li>
+  <% end %>
+</ul>

@@ -1,0 +1,9 @@
+<table border="0">
+  <% @movies.each do |movie| %>
+    <tr>
+      <td> <%= movie[:title] %></td>
+      <td><%= link_to 'Start a discussion', start_a_discussion_path(movie[:title],movie[:poster],
+                                            movie[:year],movie[:synopsis]) %></td>
+    <tr>
+  <% end %>
+</table>

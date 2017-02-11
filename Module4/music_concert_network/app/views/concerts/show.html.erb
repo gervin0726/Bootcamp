@@ -1,0 +1,34 @@
+<h1>Concierto</h1>
+<p>Artista: <%= @concert.artist %></p>
+<p>Fecha: <%= @concert.date %></p>
+<p>Precio: <%= @concert.price %></p>
+<p>Lugar: <%= @concert.venue %></p>
+<p>Descripción: <%= @concert.description %></p>
+
+<ul class="comments">
+  <% @concert_comments.each do |concert_comment| %>
+    <li>
+      <div class="comment">
+        <div class="thumbail"><%= image_tag("/images/avatar.png") %></div>
+        <div class="block">
+          <div class="commnet-by"><%= concert_comment.nickname %></div>
+          <p><%= concert_comment.content %></p>
+        </div>
+      </div>
+    </li>
+  <% end %>
+</ul>
+
+<h2>Escribe tu comentario</h2>
+<form action="/concerts/<%= @concert.id %>/comments" method="POST" class="addCommentForm">
+  <div>
+    <label for="nickname">Nickname</label><br><br>
+    <input type="text" placeholder="nickname" name="comment[nickname]" class="input-form" id="comment_nickname">
+  </div>
+  <div>
+    <br><label for="content">Comentario</label><br><br>
+    <textarea placeholder="comentario" rows="10" name="comment[content]" class="input-form" id="comment_content"></textarea>
+  </div>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <button class="simple-button" name="button" type="submit">Enviar Comentario</button>
+</form>

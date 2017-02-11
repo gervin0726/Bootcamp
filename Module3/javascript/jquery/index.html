@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .colorido {
+        background: red;
+      }
+    </style>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div id="container">
+      <p>Primer parrafo</p>
+      <p>Segundo Parrafo</p>
+      <h1 id="title">Jquery Exercise</h1>
+      <button class="js-tacos">Tacos</button>
+      <button data-action="do stuff">Do stuff</button>
+      <input type="text" id="info" name="name" value="Fooo">
+
+    </div>
+    <script type="text/javascript">
+      console.log($('p').text());
+      console.log($('#title').text());
+      console.log($('.js-tacos').text());
+      console.log($("button[data-action='do stuff']").text());
+      var $title = $('#title');
+      if ($title.hasClass('colorido')) {
+        title.removeClass('colorido');
+      } else {
+        $title.addClass('colorido');
+      }
+      $('#info').val($('#container p:nth-child(2)').text());
+    </script>
+  </body>
+</html>

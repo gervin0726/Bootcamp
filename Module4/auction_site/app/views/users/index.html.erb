@@ -1,0 +1,13 @@
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+<ul>
+  <% @users.each do |user| %>
+    <li> <%= user.name %></li>
+    <li> <%= user.email %></li>
+    <li> <%= link_to 'show', user_path(user) %></li>
+    <li> <%= link_to 'delete', user_path(user), method: :delete,
+             data: { confirm: 'Are you sure?'}
+         %>
+  <% end %>
+</ul>

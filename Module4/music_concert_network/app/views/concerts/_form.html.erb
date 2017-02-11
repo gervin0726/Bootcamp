@@ -1,0 +1,22 @@
+<% if flash[:alert] %>
+  <%= flash[:alert] %>
+<% end %>
+<%= form_for [@concert] do |f| %>
+  <%= f.label :Artista %>
+  <%= f.text_field :artist %><br>
+
+  <%= f.label :Fecha %>
+  <%= f.date_field :date %><br>
+
+  <%= f.label :Precio %>
+  <%= f.text_field :price %><br>
+
+  <%= f.label :Lugar %>
+  <%= f.text_field :venue %><br>
+
+  <%= f.label :Descripcion %>
+  <%= f.text_area :description %><br>
+
+  <%= f.button %>
+
+<% end %>

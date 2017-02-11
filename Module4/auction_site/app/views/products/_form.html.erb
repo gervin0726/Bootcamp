@@ -1,0 +1,18 @@
+<% if flash[:alert] %>
+  <%= flash[:alert] %>
+<% end %>
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+<%= form_for [@user, @product] do |f| %>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %><br>
+
+  <%= f.label :description %><br>
+  <%= f.text_field :description %><br>
+
+  <%= f.label :deadline %><br>
+  <%= f.date_field :deadline %><br>
+
+  <%= f.button %>
+<% end %>

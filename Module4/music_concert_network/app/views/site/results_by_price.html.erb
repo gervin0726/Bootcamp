@@ -1,0 +1,11 @@
+<div id="content">
+  <ul>
+    <% @concerts_price.each do |concert_price| %>
+      <li>
+        <a href="/concerts/<%= concert_price.id %>">
+          <%= concert_price.artist %> - <%= concert_price.date %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</div>

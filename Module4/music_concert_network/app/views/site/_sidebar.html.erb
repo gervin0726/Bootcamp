@@ -1,0 +1,11 @@
+<aside id="sidebar-rigth">
+  <ul>
+    <% @concerts_month.each do |concert_month| %>
+      <li>
+        <a href="/concerts/<%= concert_month.id %>">
+          <%= concert_month.artist %> - <%= concert_month.date %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</aside>

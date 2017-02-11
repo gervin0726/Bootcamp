@@ -1,0 +1,17 @@
+<style>
+  .completed {
+    background: green;
+  }
+  .not-completed {
+    background: red;
+  }
+</style>
+<ul>
+  <% @tasks.each do |task| %>
+  <li class="<%= task.complete? ? 'completed' : 'not-completed' %>"><%= task.content %> |
+    <a href="/complete_task/<%= task.id %>">Complete Task</a> |
+    <a href="/delete_task/<%= task.id %>">Delete Task</a>
+  </li>
+  <% end %>
+</ul>
+<a href="new_task">Add new task</a>

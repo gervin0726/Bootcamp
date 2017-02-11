@@ -1,0 +1,42 @@
+header {
+  padding-top: 10px;
+}
+
+header .pull-right .search-form-container {
+  margin-right: 10px;
+}
+
+.menu .menu-item {
+  display: inline;
+}
+
+.search-form input {
+  border-radius: 10px;
+}
+
+#profile-header-image {
+    height: 360px;
+    overflow: hidden;
+}
+
+#profile-nav-bar {
+  padding-top: 10px;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.list-num-tweets .menu-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.list-num-tweets .menu-item span {
+  display: block;
+}
+
+.btn-follow {
+  float: right;
+}

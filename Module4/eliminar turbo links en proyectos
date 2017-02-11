@@ -1,0 +1,4 @@
+Eliminar turbolinks de:
+  - Gemfile/ gem 'turbolinks', '~> 5'
+  - views/layouts/application.html.erb (dentro del código)
+  - assets/javascript/application.js (require)

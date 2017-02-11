@@ -1,0 +1,14 @@
+<% if flash[:alert] %>
+  <%= flash[:alert] %>
+<% end %>
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+<%= form_for @user do |f| %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %><br>
+
+  <%= f.label :email %><br>
+  <%= f.text_field :email %><br><br>
+  <%= f.button %>
+<% end %>

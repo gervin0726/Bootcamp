@@ -1,0 +1,31 @@
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 80%; 
+}
+.menu,
+.social {
+   background: #1212b7;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 50px;
+   margin: 0 auto;
+   margin-top: 40px;
+   float: left;
+}
+
+.menu {
+  width: 80%;
+}
+
+.social {
+  width: 20%;
+}
+
+
+.item {
+  list-style: none;
+  color: white;
+  font-weight: bold;
+}

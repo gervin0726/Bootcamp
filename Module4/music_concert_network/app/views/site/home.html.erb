@@ -1,0 +1,12 @@
+<div id="content">
+  <ul>
+    <% @concerts_today.each do |concert_today| %>
+      <li>
+        <a href="/concerts/<%= concert_today.id %>">
+          <%= concert_today.artist %> - <%= concert_today.date %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</div>
+<%= render 'sidebar' %>

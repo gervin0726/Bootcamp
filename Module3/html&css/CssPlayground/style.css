@@ -1,0 +1,13 @@
+#red {
+  background: red;
+  border: blue 1px solid;
+}
+
+.blue {
+  background: blue;
+  border: red 1px solid;
+}
+
+.box {
+  margin: 10px;
+}

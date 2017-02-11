@@ -1,0 +1,14 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+$color_blue: #1212b7;
+$color_black: #333;
+$color_white: #fff;
+@import "compass/reset";
+@import "bootstrap-compass";
+@import "bootstrap";
+@import "header";
+@import "main-content";
+@import "footer";

@@ -1,0 +1,23 @@
+#header-image {
+  background-image: url('http://lorempixel.com/400/200/sports/');
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-left: -20px;
+}
+
+[class*="span"] {
+  display: inline;
+  float: left;
+  margin-left: 20px;
+}
+
+.span-one-third {
+  width: 300px;
+}
