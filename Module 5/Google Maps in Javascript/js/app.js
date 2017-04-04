@@ -1,12 +1,11 @@
 var map = new google.maps.Map( document.getElementById('map'), {
   zoom: 10,
-  center: new google.maps.LatLng(-33.92, 151.25),
+  center: new google.maps.LatLng(40.416775,-3.70379),
   mapTypeId: google.maps.MapTypeId.ROADMAP
 });
 
 var locations = [
-  ['Bondi Beach', -33.890542, 151.274856, 4],
-  ['Coogee Beach', -33.923036, 151.259052, 5]
+  ['Bondi Beach', 40.384684, -3.689476, 4]
 ]
 
 var infowindow = new google.maps.InfoWindow();
